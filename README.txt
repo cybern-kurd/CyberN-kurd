@@ -1,19 +1,26 @@
-CyberN Kurd — Professional v3
+CyberN Kurd — Professional v4
+
+A responsive Kurdish-first cybersecurity education website inspired by the provided CyberN Kurd visual reference.
+
+Features:
+- Kurdish / English / Arabic language switcher
+- Modern dark neon cybersecurity UI
+- News, articles, labs, roadmap, quiz, tools, glossary navigation
+- Responsive mobile/tablet/desktop layout
+- Light/dark theme
+- Contact details for Nozhdar Arshad Kanabi
+- Instagram: https://www.instagram.com/cybernkurd/
+- Email: nwzhdararshad1@gmail.com
+- Phone: 0750 290 2007
 
 Files:
-- index.html — multilingual homepage
-- style.css — responsive neon cyber UI + Kurdish/Arabic/English typography
-- script.js — language switcher, theme, search, password meter, quiz, articles
-- logo.png — CyberN Kurd logo
+index.html
+style.css
+script.js
+logo.png
 
-Languages: Kurdish (Sorani), English, Arabic.
-Instagram: https://www.instagram.com/cybernkurd
-Email: nwzhdararshad1@gmail.com
-Creator: Nozhdar Arshad Kanabi / نۆژدار ئەرشەد کانبی
-Phone: 0750 290 2007
+GitHub Pages:
+Upload/replace the files in the repository root on the main branch. Keep Pages configured as main / (root).
 
-IMPORTANT:
-- This is a static GitHub Pages website.
-- The News section is currently an educational/static section. For truly live news, connect it later to a CMS or a secure server-side news source.
-- Never put API keys, private keys, passwords or secrets in this repository.
-- Security testing must only be performed on systems you own or have explicit authorization to test.
+Important:
+The News section in this static package is a designed section with sample content. It is NOT an automatic live-news feed. To make it truly live, connect a backend/CMS or a safe public news source later. Never expose API keys in client-side JavaScript.
