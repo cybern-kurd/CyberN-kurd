@@ -1,114 +1,48 @@
 <!doctype html>
 <html lang="ku" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="CyberN Kurd — فێربوون، ئاگاداری و پاراستن لە بواری Cyber Security">
-  <title>CyberN Kurd | Cyber Security</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="CyberN Kurd — Cyber Security Education, Awareness & News in Kurdish, English and Arabic.">
+<meta name="theme-color" content="#050b13"><meta property="og:title" content="CyberN Kurd | Cyber Security Education">
+<meta property="og:description" content="فێربوون • هۆشیاری • پاراستن | Cyber Security Education & Awareness">
+<title>CyberN Kurd | Cyber Security Education</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="bg-grid"></div>
-  <header class="nav">
-    <a class="brand" href="#home">
-      <img src="logo.png" alt="CyberN Kurd Logo">
-      <span>CYBERN <b>KURD</b></span>
-    </a>
-    <button class="menu" aria-label="کردنەوەی مێنیو">☰</button>
-    <nav>
-      <a href="#home">سەرەتا</a>
-      <a href="#basics">بنەماکان</a>
-      <a href="#threats">هەڕەشەکان</a>
-      <a href="#articles">بابەتەکان</a>
-      <a href="#about">دەربارە</a>
-    </nav>
-  </header>
-
-  <main id="home">
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">CYBER SECURITY • KURDISTAN</p>
-        <h1>فێربە. <span>پارێزە.</span> بەهێز بە.</h1>
-        <p class="lead">سەرچاوەیەکی کوردی بۆ فێربوونی Cyber Security، هۆشیاری دیجیتاڵ و بنەماکانی پاراستنی زانیاری.</p>
-        <div class="actions">
-          <a class="btn primary" href="#basics">دەستپێکردنی فێربوون</a>
-          <a class="btn ghost" href="#articles">بینینی بابەتەکان</a>
-        </div>
-        <div class="stats">
-          <div><strong>01</strong><small>فێربوون</small></div>
-          <div><strong>02</strong><small>هۆشیاری</small></div>
-          <div><strong>03</strong><small>پاراستن</small></div>
-        </div>
-      </div>
-      <div class="hero-art">
-        <div class="orb"></div>
-        <div class="shield">🛡️</div>
-        <div class="scan">SYSTEM SECURE<br><span>CYBERN KURD</span></div>
-      </div>
-    </section>
-
-    <section class="section" id="basics">
-      <div class="section-head">
-        <p class="eyebrow">START HERE</p>
-        <h2>بنەماکانی Cyber Security</h2>
-        <p>لە سادەترین بابەتەکانەوە دەست پێ بکە و هەنگاو بە هەنگاو پێش بکە.</p>
-      </div>
-      <div class="cards">
-        <article class="card"><i>🔐</i><h3>Password Security</h3><p>چۆن وشەی نهێنییەکی بەهێز دروست بکەیت و بە شێوەی دروست بیپارێزیت.</p><button onclick="openArticle('password')">خوێندنەوە ←</button></article>
-        <article class="card"><i>🎣</i><h3>Phishing</h3><p>فێربە چۆن نامە و لینکە فێڵبازەکان بناسیت پێش ئەوەی کلیکیان لێ بکەیت.</p><button onclick="openArticle('phishing')">خوێندنەوە ←</button></article>
-        <article class="card"><i>🦠</i><h3>Malware</h3><p>زانیاریی سەرەتایی دەربارەی Virus، Trojan و Ransomware و ڕێگای کەمکردنەوەی مەترسی.</p><button onclick="openArticle('malware')">خوێندنەوە ←</button></article>
-        <article class="card"><i>📱</i><h3>2FA</h3><p>چۆنیەتی بەکارهێنانی Two-Factor Authentication بۆ پاراستنی هەژمارەکان.</p><button onclick="openArticle('2fa')">خوێندنەوە ←</button></article>
-        <article class="card"><i>🌐</i><h3>Network Security</h3><p>بنەماکانی Network، Wi‑Fi و هۆشیاری لە کاتی بەکارهێنانی تۆڕە گشتییەکان.</p><button onclick="openArticle('network')">خوێندنەوە ←</button></article>
-        <article class="card"><i>🧠</i><h3>Social Engineering</h3><p>تێگەیشتن لەو شێوازانەی کە هێرشکەر هەوڵ دەدات متمانەی بەکارهێنەر بەدەست بهێنێت.</p><button onclick="openArticle('social')">خوێندنەوە ←</button></article>
-      </div>
-    </section>
-
-    <section class="section dark" id="threats">
-      <div class="section-head">
-        <p class="eyebrow">THREAT AWARENESS</p>
-        <h2>هەڕەشە دیجیتاڵییەکان بناسە</h2>
-      </div>
-      <div class="threats">
-        <div><span>01</span><b>Phishing</b><p>فێڵکردن بە ئیمەیل، پەیام یان وێبسایتی ساختە.</p></div>
-        <div><span>02</span><b>Ransomware</b><p>قوفڵکردن یان کۆدکردنی فایلەکان و داواکاریی باج.</p></div>
-        <div><span>03</span><b>DDoS</b><p>هێرشی زۆرێک لە داواکاری بۆ تێکدانی بەردەوامی خزمەتگوزاری.</p></div>
-        <div><span>04</span><b>Brute Force</b><p>تاقیکردنەوەی زۆر وشەی نهێنی تا گەیشتن بە وشەی دروست.</p></div>
-      </div>
-    </section>
-
-    <section class="section" id="articles">
-      <div class="section-head">
-        <p class="eyebrow">LATEST KNOWLEDGE</p>
-        <h2>بابەتە پێشنیارکراوەکان</h2>
-      </div>
-      <div class="article-list">
-        <article><div class="tag">AWARENESS</div><h3>٥ هەنگاوی سادە بۆ پاراستنی هەژمارەکانت</h3><p>وشەی نهێنیی جیاواز، 2FA، نوێکردنەوەی سیستەم و هۆشیاری لە لینکە نەناسراوەکان.</p><button onclick="openArticle('account')">زیاتر بخوێنەوە</button></article>
-        <article><div class="tag">BEGINNER</div><h3>Cyber Security چییە؟</h3><p>پێناسەی Cyber Security و بۆچی پاراستنی زانیاری لە ژیانی ڕۆژانەدا گرنگە.</p><button onclick="openArticle('cyber')">زیاتر بخوێنەوە</button></article>
-        <article><div class="tag">PRACTICAL</div><h3>چۆن لینکێکی گومانلێکراو بناسین؟</h3><p>ناونیشانی دۆمەین، HTTPS، هەڵەی نووسین و نیشانەکانی فێڵبازێتی پشکنین بکە.</p><button onclick="openArticle('link')">زیاتر بخوێنەوە</button></article>
-      </div>
-    </section>
-
-    <section class="cta">
-      <div><p class="eyebrow">CYBERN KURD</p><h2>زانیاری، یەکەمین قۆناغی پاراستنە.</h2><p>ئامانجمان ئەوەیە زانیاریی Cyber Security بە زمانی کوردی بە شێوەیەکی سادە و بەسوود بگەیەنین.</p></div>
-      <a class="btn primary" href="https://instagram.com/cybern.kurd" target="_blank" rel="noopener">Instagram ↗</a>
-    </section>
-
-    <section class="section about" id="about">
-      <div class="section-head"><p class="eyebrow">ABOUT</p><h2>دەربارەی CyberN Kurd</h2></div>
-      <p>CyberN Kurd پڕۆژەیەکی فێرکارییە لە بواری Cyber Security بۆ بڵاوکردنەوەی زانیاری، هۆشیاری و بنەماکانی پاراستنی دیجیتاڵ بە زمانی کوردی. ئەم وێبسایتە دەتوانرێت بە ئاسانی گەشە پێ بدرێت و بابەتی نوێی تێ زیاد بکرێت.</p>
-    </section>
-  </main>
-
-  <footer>
-    <strong>CYBERN <b>KURD</b></strong>
-    <span>LEARN • SECURE • PROTECT</span>
-    <small>© <span id="year"></span> CyberN Kurd</small>
-  </footer>
-
-  <dialog id="modal">
-    <button class="close" onclick="closeArticle()">×</button>
-    <div id="modalContent"></div>
-  </dialog>
-  <script src="script.js"></script>
-</body>
-</html>
+<div class="bg-grid"></div>
+<header class="nav">
+<a class="brand" href="#home"><img src="logo.png" alt="CyberN Kurd logo"><span>CyberN <b>Kurd</b><small>Cyber Security Education</small></span></a>
+<nav id="mainNav">
+<a href="#home" data-i18n="nav_home">سەرەتا</a><a href="#learn" data-i18n="nav_learn">فێربوون</a><a href="#news" data-i18n="nav_news">News</a><a href="#threats" data-i18n="nav_threats">هەڕەشەکان</a><a href="#quiz" data-i18n="nav_quiz">Quiz</a><a href="#articles" data-i18n="nav_articles">بابەتەکان</a><a href="#about" data-i18n="nav_about">دەربارە</a><a href="#contact" data-i18n="nav_contact">پەیوەندی</a>
+</nav>
+<div class="nav-tools"><select id="langSelect" aria-label="Language"><option value="ku">کوردی</option><option value="en">English</option><option value="ar">العربية</option></select><button id="themeBtn" class="icon-btn" aria-label="Theme">☾</button><button class="menu" id="menuBtn" aria-label="Menu">☰</button></div>
+</header>
+<main id="home">
+<section class="hero">
+<div class="hero-copy"><p class="eyebrow">CYBER SECURITY • EDUCATION • AWARENESS</p><h1 data-i18n="hero_title">سایبەر ئەمنی کورد</h1><h2 data-i18n="hero_sub">فێربوون • هۆشیاری • پاراستن</h2><p class="lead" data-i18n="hero_text">CyberN Kurd پلاتفۆرمێکی فێرکارییە بۆ فێربوون و بڵاوکردنەوەی زانیاریی Cyber Security بە کوردی، ئینگلیزی و عەرەبی.</p><div class="actions"><a class="btn primary" href="#learn" data-i18n="hero_cta">دەستپێکردنی فێربوون</a><a class="btn ghost" href="#news" data-i18n="hero_news">بینینی هەواڵەکان</a></div><div class="stats"><div><strong>3</strong><small data-i18n="stat_lang">زمان</small></div><div><strong>24/7</strong><small data-i18n="stat_access">دەستگەیشتن</small></div><div><strong>100%</strong><small data-i18n="stat_focus">فێرکاری</small></div></div></div>
+<div class="hero-art"><div class="orb"></div><div class="shield">🛡️</div><div class="scan">SYSTEM SECURE<br><span>CYBERN KURD</span></div><div class="code-card">010101<br>SECURITY<br><b>ONLINE</b></div></div>
+</section>
+<section class="section" id="learn"><div class="section-head"><p class="eyebrow">LEARNING ROADMAP</p><h2 data-i18n="learn_title">لە Beginner ـەوە تا Professional</h2><p data-i18n="learn_text">ڕێگایەکی ڕوون بۆ دەستپێکردن و پەرەپێدانی تواناکانت.</p></div><div class="roadmap"><div class="step"><b>01</b><h3>Fundamentals</h3><p data-i18n="step1">Networking، CIA Triad، Authentication و بنەماکانی Security.</p></div><div class="step"><b>02</b><h3>Web Security</h3><p data-i18n="step2">HTTP، Cookies، Sessions و ناسینەوەی مەترسییەکانی Web.</p></div><div class="step"><b>03</b><h3>Practical Labs</h3><p data-i18n="step3">مەشق لە ژینگەی یاسایی و تاقیکردنەوەی پاراستن.</p></div><div class="step"><b>04</b><h3>Career</h3><p data-i18n="step4">SOC، Blue Team، Pentesting و پڕۆژەسازی بۆ Portfolio.</p></div></div></section>
+<section class="section feature-strip"><div class="feature"><span>🧪</span><b data-i18n="feature_lab">Cyber Labs</b><small data-i18n="feature_lab_s">مەشق و تاقیکردنەوەی یاسایی</small></div><div class="feature"><span>🔐</span><b data-i18n="feature_pw">Password Checker</b><small data-i18n="feature_pw_s">هەڵسەنگاندنی هێزی password لەسەر ئامێر</small></div><div class="feature"><span>🧠</span><b data-i18n="feature_quiz">Cyber Quiz</b><small data-i18n="feature_quiz_s">زانیاریت تاقی بکەرەوە</small></div><div class="feature"><span>📚</span><b data-i18n="feature_glossary">Cyber Glossary</b><small data-i18n="feature_glossary_s">وشە و پێناسە سادەکان</small></div></section>
+<section class="section" id="news"><div class="section-head"><p class="eyebrow">CYBER NEWS</p><h2 data-i18n="news_title">هەواڵ و نوێکارییەکانی سایبەر</h2><p data-i18n="news_text">شوێنکەوتنی هەواڵە گرنگەکانی Cyber Security. ئەم بەشە دەتوانرێت دواتر بە CMS یان API ـی تایبەت بەڕۆژ بکرێتەوە.</p></div><div class="news-grid"><article class="news-card"><span class="news-tag">SECURITY</span><h3 data-i18n="news1_title">هۆشیاری لە فیشینگ و لینکە گومانلێکراوەکان</h3><p data-i18n="news1_text">پێش کردنەوەی هەر لینکێک، دۆمەین و سەرچاوەکە بە وردی بپشکنە.</p><small>CyberN Kurd • 2026</small></article><article class="news-card"><span class="news-tag">AWARENESS</span><h3 data-i18n="news2_title">2FA بەهێزترین هەنگاوە بۆ پاراستنی هەژمار</h3><p data-i18n="news2_text">2FA چینێکی زیادەی پاراستنە و دەبێت بۆ هەژمارە گرنگەکان چالاک بکرێت.</p><small>CyberN Kurd • 2026</small></article><article class="news-card"><span class="news-tag">UPDATE</span><h3 data-i18n="news3_title">نوێکردنەوەی سیستەم و ئەپەکان گرنگە</h3><p data-i18n="news3_text">نوێکردنەوەکان زۆرجار چاکسازییەکانی ئاسایش لەخۆدەگرن.</p><small>CyberN Kurd • 2026</small></article></div></section>
+<section class="section" id="basics"><div class="section-head"><p class="eyebrow">START HERE</p><h2 data-i18n="basics_title">بنەماکانی Cyber Security</h2></div><div class="cards" id="topicCards">
+<article class="card" data-search="password وشەی نهێنی"><i>🔐</i><h3>Password Security</h3><p data-i18n="card_pw">وشەی نهێنیی بەهێز، جیاواز و password manager.</p><button onclick="openArticle('password')" data-i18n="read_more">خوێندنەوە ←</button></article>
+<article class="card" data-search="phishing فیشینگ"><i>🎣</i><h3>Phishing</h3><p data-i18n="card_phish">چۆن لینک و نامەی فێڵباز بناسیت پێش کلیککردن.</p><button onclick="openArticle('phishing')" data-i18n="read_more">خوێندنەوە ←</button></article>
+<article class="card" data-search="malware ڤایرۆس"><i>🦠</i><h3>Malware</h3><p data-i18n="card_malware">Virus، Trojan و Ransomware و ڕێگای کەمکردنەوەی مەترسی.</p><button onclick="openArticle('malware')" data-i18n="read_more">خوێندنەوە ←</button></article>
+<article class="card" data-search="2fa authentication"><i>📱</i><h3>2FA</h3><p data-i18n="card_2fa">چینێکی زیادەی پاراستن بۆ هەژمارەکانت.</p><button onclick="openArticle('2fa')" data-i18n="read_more">خوێندنەوە ←</button></article>
+<article class="card" data-search="network wifi تۆڕ"><i>🌐</i><h3>Network Security</h3><p data-i18n="card_network">بنەماکانی تۆڕ و هۆشیاری لە Wi‑Fi ـی گشتی.</p><button onclick="openArticle('network')" data-i18n="read_more">خوێندنەوە ←</button></article>
+<article class="card" data-search="social engineering"><i>🧠</i><h3>Social Engineering</h3><p data-i18n="card_social">چۆن هێرشکاران متمانە و هەڵەی مرۆڤ بەکار دەهێنن.</p><button onclick="openArticle('social')" data-i18n="read_more">خوێندنەوە ←</button></article></div></section>
+<section class="section tools"><div class="section-head"><p class="eyebrow">SMART TOOLS</p><h2 data-i18n="tools_title">ئامرازە فێرکارییەکان</h2></div><div class="tool-grid"><div class="tool"><span>🔎</span><h3 data-i18n="search_title">گەڕان لە سایت</h3><p data-i18n="search_text">بابەتەکان بە ناو یان وشەی سەرەکی بدۆزەرەوە.</p><input id="searchBox" placeholder="گەڕان..." aria-label="Search"></div><div class="tool"><span>🔑</span><h3>Password Check</h3><p data-i18n="pw_text">تەنها لەسەر ئامێرەکەت هەڵسەنگاندنی هێزی password بکە.</p><input id="pw" type="password" placeholder="Password"><div class="meter"><span id="pwBar"></span></div><small id="pwText">هیچ شتێک داخڵ نەکراوە</small></div><div class="tool"><span>📖</span><h3>Cyber Glossary</h3><p data-i18n="glossary_text">وشەکانی گرنگی Cyber Security بە مانای سادە.</p><button class="mini" onclick="openArticle('glossary')" data-i18n="glossary_btn">بینینی Glossary</button></div></div></section>
+<section class="section dark" id="threats"><div class="section-head"><p class="eyebrow">THREAT AWARENESS</p><h2 data-i18n="threat_title">هەڕەشە دیجیتاڵییەکان بناسە</h2></div><div class="threats"><div><span>01</span><b>Phishing</b><p data-i18n="th1">فێڵکردن بە ئیمەیل، پەیام یان وێبسایتی ساختە.</p></div><div><span>02</span><b>Ransomware</b><p data-i18n="th2">قوفڵکردن یان کۆدکردنی فایلەکان و داواکاریی باج.</p></div><div><span>03</span><b>DDoS</b><p data-i18n="th3">زۆرکردنی داواکاری بۆ تێکدانی بەردەوامی خزمەتگوزاری.</p></div><div><span>04</span><b>Brute Force</b><p data-i18n="th4">هەوڵدانی دووبارە بۆ دۆزینەوەی وشەی نهێنی.</p></div></div></section>
+<section class="section" id="quiz"><div class="section-head"><p class="eyebrow">TEST YOUR KNOWLEDGE</p><h2>Cyber Quiz 🧠</h2><p data-i18n="quiz_text">پێنج پرسیار؛ ببینە چەند لە Cyber Security دەزانیت.</p></div><div class="quiz" id="quizBox"></div></section>
+<section class="section" id="articles"><div class="section-head"><p class="eyebrow">KNOWLEDGE HUB</p><h2 data-i18n="articles_title">بابەتە پێشنیارکراوەکان</h2></div><div class="article-list"><article><div class="tag">AWARENESS</div><h3 data-i18n="art1_title">٥ هەنگاو بۆ پاراستنی هەژمار</h3><p data-i18n="art1_text">Password ـی جیاواز، 2FA، نوێکردنەوە و هۆشیاری.</p><button onclick="openArticle('account')" data-i18n="more">زیاتر ←</button></article><article><div class="tag">BEGINNER</div><h3 data-i18n="art2_title">Cyber Security چییە؟</h3><p data-i18n="art2_text">پێناسە و گرنگی پاراستنی سیستەم و زانیاری.</p><button onclick="openArticle('cyber')" data-i18n="more">زیاتر ←</button></article><article><div class="tag">PRACTICAL</div><h3 data-i18n="art3_title">لینکی گومانلێکراو</h3><p data-i18n="art3_text">دۆمەین، HTTPS، short links و نیشانەکانی فێڵبازێتی.</p><button onclick="openArticle('link')" data-i18n="more">زیاتر ←</button></article></div></section>
+<section class="cta"><div><p class="eyebrow">LEARN • SECURE • PROTECT</p><h2 data-i18n="cta_title">زانیاری، یەکەمین قۆناغی پاراستنە.</h2><p data-i18n="cta_text">CyberN Kurd هەوڵ دەدات زانیارییەکانی Cyber Security بە زمانی کوردی بگەیەنێت.</p></div><a class="btn primary" href="https://www.instagram.com/cybernkurd" target="_blank" rel="noopener">Instagram ↗</a></section>
+<section class="section about" id="about"><div class="section-head"><p class="eyebrow">ABOUT</p><h2 data-i18n="about_title">دەربارەی CyberN Kurd</h2></div><p data-i18n="about_text">CyberN Kurd پڕۆژەیەکی فێرکارییە بۆ بڵاوکردنەوەی زانیاری، هۆشیاری و بنەماکانی پاراستنی دیجیتاڵ بە زمانی کوردی. ناوەڕۆکەکان بۆ فێربوون و پاراستنن و تاقیکردنەوەی هەر سیستەمێک دەبێت تەنها بە مۆڵەت و لە ژینگەی یاسایی بکرێت.</p></section>
+<section class="section contact" id="contact"><div class="section-head"><p class="eyebrow">CONTACT</p><h2 data-i18n="contact_title">دروستکەر و پەیوەندی</h2></div><div class="contact-card"><div><h3>Nozhdar Arshad Kanabi</h3><p>نۆژدار ئەرشەد کانبی</p><p data-i18n="creator">Founder & Developer • CyberN Kurd</p></div><div><a href="tel:+9647502902007">📞 0750 290 2007</a><a href="mailto:nwzhdararshad1@gmail.com">✉️ nwzhdararshad1@gmail.com</a><a href="https://www.instagram.com/cybernkurd" target="_blank" rel="noopener">📷 @cybernkurd</a></div></div></section>
+</main>
+<footer><div><strong>CyberN <b>Kurd</b></strong><small>Cyber Security Education</small></div><span>LEARN • SECURE • PROTECT</span><small>© <span id="year"></span> CyberN Kurd • Nozhdar Arshad Kanabi</small></footer>
+<dialog id="modal"><button class="close" onclick="closeArticle()">×</button><div id="modalContent"></div></dialog>
+<script src="script.js"></script>
+</body></html>
